@@ -70,11 +70,11 @@ const startVibration = time => {
 
 <style lang="scss" scoped>
 .van-button + .van-button {
-  margin-left: 2vw;
+  margin-left: 12px;
 }
 
 .van-row {
-  margin-top: 2vw;
+  margin-top: 12px;
 }
 
 .preview-img {

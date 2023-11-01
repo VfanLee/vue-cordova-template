@@ -5,7 +5,7 @@ const count = ref(0)
 </script>
 
 <template>
-  <div>contact page</div>
+  <h2>contact page</h2>
 
   <van-button type="primary" @click="count++">{{ count }}</van-button>
 </template>

@@ -16,8 +16,8 @@ import Tabbar from './tabbar/index.vue'
   </main>
 </template>
 
-<style lang="scss" scoped>
-.app-main {
-  padding-bottom: 50px;
+<style lang="scss">
+.main__container {
+  padding-bottom: 60px;
 }
 </style>
