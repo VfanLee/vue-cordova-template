@@ -1,5 +1,9 @@
 # vue-cordova-example
 
+English | [简体中文](./README.zh-CN.md)
+
+## Introduction
+
 Hybrid Development: Based on [Vue 3.x](https://vuejs.org/) and [Cordova 12.x](https://cordova.apache.org/).
 
 ## Development Environment

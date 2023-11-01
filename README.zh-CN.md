@@ -1,5 +1,9 @@
 # vue-cordova-example
 
+简体中文 | [English](./README.md)
+
+## 介绍
+
 混合开发：基于[Vue 3.x](https://vuejs.org/)和[Cordova 12.x](https://cordova.apache.org/)。
 
 ## 开发环境
