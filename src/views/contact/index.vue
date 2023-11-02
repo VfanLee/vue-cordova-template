@@ -18,3 +18,9 @@ const onRefresh = () => {
     <van-button type="primary" @click="count++">{{ count }}</van-button>
   </van-pull-refresh>
 </template>
+
+<style>
+.van-pull-refresh {
+  height: 100%;
+}
+</style>
