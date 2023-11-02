@@ -2,25 +2,23 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import router from './router'
 
-import { Button, Tabbar, TabbarItem, Row, Col } from 'vant'
+import { Button, Tabbar, TabbarItem, Row, Col, PullRefresh } from 'vant'
 import App from './App.vue'
 
 import 'normalize.css'
 import 'vant/lib/index.css'
 import '@/styles/index.scss'
-import '@/styles/theme/index.css'
+import '@/styles/theme/index.scss'
 
 const app = createApp(App)
 
 // 全局注册 Vant 组件
-const vantComponents = { Button, Tabbar, TabbarItem, Row, Col }
+const vantComponents = { Button, Tabbar, TabbarItem, Row, Col, PullRefresh }
 for (const component in vantComponents) {
   app.component(vantComponents[component].name, vantComponents[component])
 }
 
-app
-  .use(createPinia())
-  .use(router)
+app.use(createPinia()).use(router)
 
 if (import.meta.env.PROD) {
   console.log('prod mode')
