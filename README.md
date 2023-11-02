@@ -23,6 +23,6 @@ Hybrid Development: Based on [Vue 3.x](https://vuejs.org/) and [Cordova 12.x](ht
 1. Clone this project and navigate to its directory.
 2. Run `npm i && npm run build`.
 3. Execute `cordova platform add android`, and the dependent plugins will be installed automatically.
-4. Connect your phone or open an emulator, then run `npm run build:app`.
+4. Connect your phone or open an emulator, then run `npm run app`.
 
 That's it! Have Fun!

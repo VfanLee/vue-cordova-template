@@ -23,6 +23,6 @@
 1. 克隆该项目并进入其目录。
 2. 运行 `npm i && npm run build`。
 3. 执行 `cordova platform add android`，依赖插件将自动安装。
-4. 连接您的手机或打开模拟器，然后运行 `npm run build:app`。
+4. 连接您的手机或打开模拟器，然后运行 `npm run app`。
 
 就是这样！玩的开心！
