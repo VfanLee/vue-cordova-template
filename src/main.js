@@ -2,23 +2,20 @@ import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import router from './router'
 
-import { Button, Tabbar, TabbarItem, Row, Col, PullRefresh } from 'vant'
 import App from './App.vue'
 
 import 'normalize.css'
-import 'vant/lib/index.css'
+// vant 自动按需引入需手动引入函数组件的样式
+import 'vant/es/toast/style'
+import 'vant/es/dialog/style'
 import '@/styles/index.scss'
 import '@/styles/theme/index.scss'
 
 const app = createApp(App)
 
-// 全局注册 Vant 组件
-const vantComponents = { Button, Tabbar, TabbarItem, Row, Col, PullRefresh }
-for (const component in vantComponents) {
-  app.component(vantComponents[component].name, vantComponents[component])
-}
-
-app.use(createPinia()).use(router)
+app
+  .use(createPinia())
+  .use(router)
 
 if (import.meta.env.PROD) {
   console.log('prod mode')
